@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.artur.epllive.TableActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/DP20"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/text_view_epl_table"
+        android:layout_below="@id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/DP20"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/epl_table"
+        android:textSize="@dimen/DP20"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="@dimen/DP24"
+        android:layout_marginTop="@dimen/DP60"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/club_name"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/DP40"
+        android:layout_marginTop="@dimen/DP64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Club"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_played"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/DP168"
+        android:layout_marginTop="@dimen/DP64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Played"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_won"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/DP192"
+        android:layout_marginTop="@dimen/DP64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Won"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_drawn"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/DP216"
+        android:layout_marginTop="@dimen/DP64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Drawn"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_lost"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/DP240"
+        android:layout_marginTop="@dimen/DP64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Lost"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_scored"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/DP264"
+        android:layout_marginTop="@dimen/DP64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Scored"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_conceded"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/DP288"
+        android:layout_marginTop="@dimen/DP64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Conceded"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_difference"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/DP312"
+        android:layout_marginTop="@dimen/DP64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Difference"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_points"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/DP332"
+        android:layout_marginTop="@dimen/DP64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Points"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <ListView
+        android:id="@+id/clubs_list_view"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/DP84"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>

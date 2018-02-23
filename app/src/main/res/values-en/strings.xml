@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello!</string>
+    <string name="Table">Table</string>
+    <string name="epl_table">League table</string>
+    <string name="Club">Club</string>
+    <string name="Played">P</string>
+    <string name="Won">W</string>
+    <string name="Drawn">D</string>
+    <string name="Lost">L</string>
+    <string name="Scored">S</string>
+    <string name="Conceded">C</string>
+    <string name="Difference">D</string>
+    <string name="Points">PTS</string>
+    <string name="Stats">Statistics</string>
+    <string name="FavClub">Random club squad</string>
+    <string name="Scorers">Scorers</string>
+    <string name="YellowCards">Yellow cards</string>
+    <string name="Saves">Saves</string>
+    <string name="Assistants">Assistants</string>
+    <string name="RedCards">Red cards</string>
+    <string name="CleanSheets">Clean sheets</string>
+    <string name="topScorers">Top scorers</string>
+    <string name="topAssistants">Top assistants</string>
+    <string name="mostYellow">Most yellow cards</string>
+    <string name="mostRed">Most red cards</string>
+    <string name="mostSaves">Most saves</string>
+    <string name="mostCleanSheets">Most clean sheets</string>
+    <string name="Player">Player</string>
+    <string name="Score">Score</string>
+    <string name="ChooseCategory">Choose category</string>
+    <string name="FavClubTrue">This is your last random club! Shake to get new one.</string>
+    <string name="FavClubFalse">You don\'t have random club right now. Shake to get one!</string>
+    <string name="Schedule">Schedule</string>
+    <string name="GameweekString">Gameweek</string>
+    <string name="Previous"><![CDATA[<<]]></string>
+    <string name="Next"><![CDATA[>>]]></string>
+    <string name="Goalkeeper">goalkeeper</string>
+    <string name="Defender">defender</string>
+    <string name="Midfielder">midfielder</string>
+    <string name="Forward">forward</string>
+    <string name="Goals">Goals</string>
+    <string name="Assists">Assists</string>
+</resources>

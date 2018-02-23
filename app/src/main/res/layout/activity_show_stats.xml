@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.artur.epllive.ShowStatsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/DP20"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textShowStats"
+        android:layout_below="@id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/DP20"
+        android:layout_gravity="center_horizontal"
+        tools:text="@string/ExampleTop"
+        android:textSize="@dimen/DP20"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="@dimen/DP24"
+        android:layout_marginTop="@dimen/DP60"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/player_name_stats"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="@dimen/DP64"
+        android:layout_marginTop="@dimen/DP64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Player"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/player_points"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/DP20"
+        android:layout_marginTop="@dimen/DP64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Score"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <ListView
+        android:id="@+id/players_list_view"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/DP84"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>

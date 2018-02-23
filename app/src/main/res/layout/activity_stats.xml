@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.artur.epllive.StatsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/DP20"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/text_view_epl_table"
+        android:layout_below="@id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/DP20"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/ChooseCategory"
+        android:textSize="@dimen/DP20"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/scorersButton"
+                android:background="@drawable/button_hold"
+                android:text="@string/Scorers"
+                android:textSize="@dimen/DP16"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/DP100"
+                android:layout_height="@dimen/DP100"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <Button
+                android:id="@+id/yellowCardsButton"
+                android:background="@drawable/button_hold"
+                android:text="@string/YellowCards"
+                android:textSize="@dimen/DP16"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_below="@id/scorersButton"
+                android:layout_height="@dimen/DP100"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <Button
+                android:id="@+id/savesButton"
+                android:background="@drawable/button_hold"
+                android:text="@string/Saves"
+                android:textSize="@dimen/DP16"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_below="@id/yellowCardsButton"
+                android:layout_height="@dimen/DP100"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/assistantsButton"
+                android:background="@drawable/button_hold"
+                android:text="@string/Assistants"
+                android:textSize="@dimen/DP16"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/DP100"
+                android:layout_height="@dimen/DP100"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <Button
+                android:id="@+id/redCardsButton"
+                android:background="@drawable/button_hold"
+                android:text="@string/RedCards"
+                android:textSize="@dimen/DP16"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_below="@id/assistantsButton"
+                android:layout_height="@dimen/DP100"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <Button
+                android:id="@+id/cleanSheetsButton"
+                android:background="@drawable/button_hold"
+                android:text="@string/CleanSheets"
+                android:textSize="@dimen/DP16"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_below="@id/redCardsButton"
+                android:layout_height="@dimen/DP100"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

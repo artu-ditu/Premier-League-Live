@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.artur.epllive.ScheduleActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/DP20"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/schedule"
+        android:layout_below="@id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/DP20"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Schedule"
+        android:textSize="@dimen/DP20"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/button_hold"
+        android:text="@string/Previous"
+        android:textSize="@dimen/DP16"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/DP60"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_hold"
+        android:text="@string/Next"
+        android:textSize="@dimen/DP16"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/DP60"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <TextView
+        android:id="@+id/gameweek"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="@dimen/DP24"
+        android:layout_marginTop="@dimen/DP60"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/DP64">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/GameweekString"
+            android:textSize="@dimen/DP12"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="@dimen/DP12"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/gameweek_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/ExampleGameweek"
+            android:textSize="@dimen/DP12"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/matches_list_view"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/DP84"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5.0sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>

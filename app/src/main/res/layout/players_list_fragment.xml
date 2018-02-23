@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/player_position"
+        android:layout_marginLeft="@dimen/DP12"
+        android:layout_marginTop="@dimen/DP8"
+        android:layout_width="@dimen/DP32"
+        android:layout_height="@dimen/DP32"
+        android:gravity="right"
+        tools:text="@string/ExamplePosition"
+        android:textSize="@dimen/DP24"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_marginLeft="@dimen/DP60"
+        android:layout_marginTop="@dimen/DP8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExamplePlayer"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/player_club"
+        android:layout_marginLeft="@dimen/DP60"
+        android:layout_below="@id/player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExampleClub"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/player_number"
+        android:layout_below="@id/player_name"
+        android:layout_toRightOf="@id/player_club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExampleNumber"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/player_score"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/DP20"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExampleScore"
+        android:textSize="@dimen/DP24"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

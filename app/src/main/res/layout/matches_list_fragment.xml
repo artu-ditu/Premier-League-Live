@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/match_date"
+        android:layout_marginLeft="@dimen/DP12"
+        android:layout_marginTop="@dimen/DP8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        tools:text="@string/ExampleDate"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/match_home_logo"
+        android:layout_marginTop="@dimen/DP12"
+        android:layout_marginLeft="@dimen/DP20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/liverpool" />
+
+    <TextView
+        android:id="@+id/match_home"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_marginRight="@dimen/DP8"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/match_date"
+        android:layout_toLeftOf="@id/match_score"
+        tools:text="@string/ExampleHome"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/match_score"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/match_date"
+        tools:text="@string/ExampleMatchScore"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/match_away"
+        android:layout_marginLeft="@dimen/DP8"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/match_date"
+        android:layout_toRightOf="@id/match_score"
+        tools:text="@string/ExampleAway"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/match_away_logo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/DP12"
+        android:layout_marginRight="@dimen/DP20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/man_city" />
+
+</RelativeLayout>

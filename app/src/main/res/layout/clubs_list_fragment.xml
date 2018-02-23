@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/club_position"
+        android:layout_marginLeft="@dimen/DP12"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExamplePosition"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/club_logo"
+        android:layout_width="@dimen/DP20"
+        android:layout_height="@dimen/DP20"
+        android:layout_marginLeft="@dimen/DP32"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_marginBottom="@dimen/DP4"
+        tools:src="@drawable/blank"/>
+
+    <TextView
+        android:id="@+id/club_name"
+        android:layout_marginLeft="@dimen/DP60"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExampleClub"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_played"
+        android:layout_marginLeft="@dimen/DP168"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExamplePlayed"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_won"
+        android:layout_marginLeft="@dimen/DP192"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExampleWon"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_drawn"
+        android:layout_marginLeft="@dimen/DP216"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExampleDrawn"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_lost"
+        android:layout_marginLeft="@dimen/DP240"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExampleLost"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_scored"
+        android:layout_marginLeft="@dimen/DP264"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExampleScored"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_conceded"
+        android:layout_marginLeft="@dimen/DP288"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExampleConceded"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_difference"
+        android:layout_marginLeft="@dimen/DP312"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExampleDifference"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/club_points"
+        android:layout_marginLeft="@dimen/DP336"
+        android:layout_marginTop="@dimen/DP4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ExamplePoints"
+        android:textSize="@dimen/DP12"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
